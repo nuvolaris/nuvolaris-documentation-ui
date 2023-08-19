@@ -1,14 +1,25 @@
 {
-  "name": "@antora/ui-default",
-  "description": "An archetype project that produces a UI for creating documentation sites with Antora",
-  "homepage": "https://gitlab.com/antora/antora-ui-default",
+  "name": "nuvolaris-documentation-ui",
+  "description": "Documentation UI for Nuvolaris project.",
+  "version": "0.1.0",
+  "author": "nuvolaris",
+  "keywords": [
+    "nuvolaris",
+    "documentation",
+    "antora",
+    "ui"
+  ],
+  "homepage": "https://nuvolaris.github.io",
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/antora/antora-ui-default.git"
+    "url": "https://gitlab.com/nuvolaris/nuvolaris-documentation-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nuvolaris/nuvolaris-bugs/issues"
   },
   "engines": {
-    "node": ">= 8.0.0"
+    "node": "^10.0.0"
   },
   "browserslist": [
     "last 2 versions"
