@@ -6,7 +6,7 @@ Compile all the information written below to send a legitimate pull request to t
 ### This PR is labeled as:
 *Choose only one and remember to select the label even on the right.*
 
-- [ ] Feature
+- [ ] Enhancement
 - [ ] Bug
 - [ ] Other
 
