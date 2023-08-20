@@ -1,0 +1,24 @@
+services:
+  nuvolaris-documentation-ui: 
+    tty: true
+    restart: always
+    container_name: nuvolaris-documentation-ui
+    image: nuvolaris/nuvolaris-documentation-ui:compose
+
+    ports:
+      - "5252:5252/tcp"
+
+    volumes:
+      - .:/home
+
+    networks:
+      default:
+        aliases:
+          - nuvolaris-network
+
+    build:
+      context: .
+      dockerfile: "./Dockerfile"
+
+      args:
+        BUILD_ENVIRONMENT: compose
