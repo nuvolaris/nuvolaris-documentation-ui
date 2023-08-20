@@ -9,6 +9,19 @@
     "antora",
     "ui"
   ],
+  "scripts": {
+    "env:compose": "npm run clean:compose; npm run compose:up",
+    "env:docker": "npm run clean:docker; npm run docker:build && npm run docker:run",
+    "clean:docker": "npm run docker:rm; npm run docker:rmi",
+    "clean:compose": "npm run compose:down; npm run compose:rmi",
+    "docker:run": "docker run --name nuvolaris-documentation-ui --network=host --volume=.:/home --init nuvolaris/nuvolaris-documentation-ui:docker",
+    "docker:build": "docker build -t nuvolaris/nuvolaris-documentation-ui:docker -f Dockerfile .",
+    "docker:rm": "docker rm nuvolaris-documentation-ui --force",
+    "docker:rmi": "docker rmi nuvolaris/nuvolaris-documentation-ui:docker --force",
+    "compose:rmi": "docker rmi nuvolaris/nuvolaris-documentation-ui:compose --force",
+    "compose:down": "docker compose down",
+    "compose:up": "docker compose up"
+  },
   "homepage": "https://nuvolaris.github.io",
   "license": "MPL-2.0",
   "repository": {
