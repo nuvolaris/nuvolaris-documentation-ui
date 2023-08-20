@@ -19,7 +19,7 @@
     "url": "https://github.com/nuvolaris/nuvolaris-bugs/issues"
   },
   "engines": {
-    "node": "^10.0.0"
+    "node": "^18.0.0"
   },
   "browserslist": [
     "last 2 versions"
